@@ -1,10 +1,10 @@
-# Computational Pathology Group website
+# Radboudumc Pelican Website Template
 
-[![Build Status](https://travis-ci.org/DIAGNijmegen/website-pathology.svg?branch=master)](https://travis-ci.org/DIAGNijmegen/website-pathology)
+[![Build Status](https://travis-ci.org/DIAGNijmegen/website-base.svg?branch=master)](https://travis-ci.org/DIAGNijmegen/website-base)
 
-Pilot website for Computational Pathology Group.
+Base Pelican setup for websites related to the DIAG group.
 
-[Online demo](https://diagnijmegen.github.io/website-pathology/)
+[Online demo](https://diagnijmegen.github.io/website-base/)
 
 **Components**
 
@@ -13,7 +13,7 @@ This project consists of four subprojects:
 1. A Pelican static site.
 2. Publications pipeline
 3. A sass-powered Radboudumc theme built on top of bootstrap.
-4. A above-the-fold css extraction tool.
+4. An above-the-fold css extraction tool.
 
 ## Static site by Pelican
 
