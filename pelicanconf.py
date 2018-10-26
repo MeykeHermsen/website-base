@@ -17,6 +17,7 @@ SITE_PICTURE = 'images/computational_pathology_social_image.png'
 HOME_IMAGE = 'images/general/home-page-image.png'
 HOME_IMAGE_CAPTION = 'Automated tumor detection'
 TWITTER_URL = 'https://twitter.com/diagnijmegen?ref_src=twsrc%5Etfw'
+FOOTER_TEXT = 'The Computational Pathology Group is part of the Department of Pathology at <a href="https://www.radboudumc.nl">Radboud University Medical Center</a>'
 
 # URLs
 SITEURL = ''
