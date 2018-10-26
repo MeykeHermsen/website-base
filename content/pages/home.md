@@ -1,4 +1,4 @@
-title: Computational Pathology Nijmegen
+title: DIAG
 save_as:  index.html
 template: home
 

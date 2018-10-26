@@ -1,4 +1,4 @@
-title: Members of the Computational Pathology Group
+title: Members of DIAG
 template: people
 
 <!---
