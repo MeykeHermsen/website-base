@@ -3,13 +3,29 @@
 from __future__ import unicode_literals
 from datetime import date
 
-CURRENTYEAR = date.today().year
+#
+# Site specific variables
+# Please update these to customize the website.
+#
 AUTHOR = u'WebteamDIAG'
 SITENAME = u'DIAG Base'
 SITENAME_SHORT = 'DIAG'
-SITE_PICTURE = 'images/computational_pathology_social_image.png'
-SITEURL = ''
 
+# Home page and social settings
+SITELEAD = 'Some introduction text that is placed on the home page.'
+SITE_PICTURE = 'images/computational_pathology_social_image.png'
+HOME_IMAGE = 'images/general/home-page-image.png'
+HOME_IMAGE_CAPTION = 'Automated tumor detection'
+TWITTER_URL = 'https://twitter.com/diagnijmegen?ref_src=twsrc%5Etfw'
+
+# URLs
+SITEURL = ''
+EDIT_CONTENT_URL = 'https://github.com/diagnijmegen/website-pathology/edit/master/{file_path}'
+
+#
+# Non-content variables
+# In general these values do not have to be changed.
+#
 PATH = 'content'
 RELATIVE_URLS = False
 
@@ -23,6 +39,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+CURRENTYEAR = date.today().year
 LINKS = ()
 DEFAULT_PAGINATION = 10
 
@@ -49,6 +66,3 @@ THEME = "themes/radboudumc-theme"
 # Plugins
 PLUGIN_PATHS = ["plugins"]
 PLUGINS = ["bibtex",  "bibtex_loader", "edit_url", "hierarchy", "fileutil"]
-
-# Other
-EDIT_CONTENT_URL = 'https://github.com/diagnijmegen/website-pathology/edit/master/{file_path}'
