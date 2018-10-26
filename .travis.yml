@@ -12,7 +12,7 @@ install:
   # Install pelican
   - pip install -r requirements.txt
   # Install requirements for the css build
-  - npm --prefix pathology-theme install
+  - npm --prefix radboudumc-theme install
   #- npm --prefix above-the-fold install
 
 # Caching settings (this speeds up the build)
@@ -26,7 +26,7 @@ before_cache:
   - rm -f $HOME/.cache/pip/log/debug.log
 
 script:
-- npm --prefix pathology-theme run deploy
+- npm --prefix radboudumc-theme run deploy
 - python plugins/bib_writer.py
 - pelican content -s publishconf.py
 #- npm --prefix above-the-fold run critical
