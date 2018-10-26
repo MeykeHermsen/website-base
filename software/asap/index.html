@@ -9,7 +9,7 @@
 
 <link href="https://diagnijmegen.github.io/website-base/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="DIAG Base Full Atom Feed" />
 
-    <title>ASAP - Fluid whole-slide image viewer - DIAG Base</title>
+    <title>Some software - DIAG Base</title>
 
 
     <!-- Search Engine -->
@@ -17,19 +17,19 @@
     <meta name="image" content="https://diagnijmegen.github.io/website-base/images/software/asap_screenshot.png">
 
     <!-- Schema.org for Google -->
-    <meta itemprop="name" content="ASAP - Fluid whole-slide image viewer - Computational Pathology Group">
+    <meta itemprop="name" content="Some software - Computational Pathology Group">
     <meta itemprop="description" content="">
     <meta itemprop="image" content="https://diagnijmegen.github.io/website-base/images/software/asap_screenshot.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="ASAP - Fluid whole-slide image viewer - Computational Pathology Group">
+    <meta name="twitter:title" content="Some software - Computational Pathology Group">
     <meta name="twitter:description" content="">
     <meta name="twitter:creator" content="@diagnijmegen">
     <meta name="twitter:image:src" content="https://diagnijmegen.github.io/website-base/images/software/asap_screenshot.png">
 
     <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta property="og:title" content="ASAP - Fluid whole-slide image viewer - Computational Pathology Group">
+    <meta property="og:title" content="Some software - Computational Pathology Group">
     <meta property="og:description" content="">
     <meta property="og:image" content="https://diagnijmegen.github.io/website-base/images/software/asap_screenshot.png">
     <meta property="og:site_name" content="Computational Pathology Group">
@@ -216,53 +216,15 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-base/">Home</a></li>
         <li class="breadcrumb-item"><a href="https://diagnijmegen.github.io/website-base/software/">Software</a></li>
-        <li class="breadcrumb-item">ASAP - Fluid whole-slide image viewer</li>
+        <li class="breadcrumb-item">Some software</li>
       </ol>
     </nav>
 </div>
     <div class="container">
-    <h1 class="page-title">ASAP - Fluid whole-slide image viewer</h1>
+    <h1 class="page-title">Some software</h1>
 
     <div class="page-content">
-        <p>ASAP is an open source platform for visualizing, annotating and automatically analyzing whole-slide histopathology images. It consists of several key-components (slide input/output, image processing, viewer) which can be used seperately. It is built on top of several well-developed open source packages like OpenSlide, Qt and OpenCV but also tries to extend them in several meaningful ways.</p>
-<p><a href="https://computationalpathologygroup.github.io/ASAP/" class="btn btn-primary">Website</a>
-<a href="https://github.com/computationalpathologygroup/ASAP/releases" class="btn btn-secondary">Download</a>
-<a href="https://github.com/computationalpathologygroup/ASAP" class="btn btn-secondary"><svg class="svg-icon svg-icon-github"><use xlink:href="#icon-github"></use></svg> View on Github</a></p>
-<h4>Features</h4>
-<ul>
-<li>Reading of scanned whole-slide images from several different vendors (Aperio, Ventana, Hamamatsu, Olympus, support for fluorescence images in Leica LIF format)</li>
-<li>Writing of generic multi-resolution tiled TIFF files for ARGB, RGB, Indexed and monochrome images (including support for different data types like float)</li>
-<li>Python wrapping of the IO library for access to multi-resolution images through Numpy array's</li>
-<li>Basic image primitives (Patch) which can be fed to image processing filters, connection to OpenCV</li>
-<li>Qt-based viewer to visualize whole-slide images in a fast, fluid manner</li>
-<li>Point, polygonal and spline annotation tools to allow annotation of whole slide images.</li>
-<li>Annotation storage in simple, human-readable XML for easy use in other software</li>
-<li>Viewer and reading library can easily be extended by implementing plugins using one of the four interface (tools, filters, extensions, fileformats)</li>
-<li>Integration of on-the-fly image processing while viewing (current examples include color deconvolution and nuclei detection)</li>
-</ul>
-<h4>Installation</h4>
-<p>Currently ASAP is only supported under 64-bit Windows and Linux machines. Compilation on other architectures should be relatively straightforward as no OS-specific libraries or headers are used. The easiest way to install the software is to download the binary installer or .DEB package from the release page.</p>
-<h4>Compilation</h4>
-<p>To compile the code yourself, some prerequesites are required. First, we use CMake (version &gt;= 3.5) as our build system and Microsoft Visual Studio or GCC as the compiler. The software depends on numerous third-party libraries:</p>
-<ul>
-<li>Boost (http://www.boost.org/)</li>
-<li>OpenCV (http://www.opencv.org/)</li>
-<li>Qt (http://www.qt.io/)</li>
-<li>libtiff (http://www.libtiff.org/)</li>
-<li>libjpeg (http://libjpeg.sourceforge.net/)</li>
-<li>JasPer (http://www.ece.uvic.ca/~frodo/jasper/)</li>
-<li>DCMTK (http://dicom.offis.de/dcmtk.php.en)</li>
-<li>SWIG (http://www.swig.org/) (only for Python wrapping of the IO library)</li>
-<li>OpenSlide (http://openslide.org/)</li>
-<li>PugiXML (http://pugixml.org/)</li>
-<li>zlib (http://www.zlib.net/)</li>
-<li>unittest++ (https://github.com/unittest-cpp/unittest-cpp)</li>
-</ul>
-<p>To help developers compile this software themselves we provide the necesarry binaries (Visual Studio 2013, 64-bit) for all third party libraries on Windows except Boost, OpenCV and Qt (due to size constraints). If you want to provide the packages yourself, there are no are no strict version requirements, except for libtiff (4.0.1 and higher), Boost (1.55 or higher), Qt (5.1 or higher) and OpenCV (3.1). On Linux all packages except OpenCV 3.1 can be installed through the package manager on Ubuntu-derived systems (tested on Ubuntu and Kubuntu 16.04 LTS). OpenCV 3.1 can easily be compile yourself.</p>
-<p>To compile the source code yourself, first make sure all third-party libraries are installed. If you download the Boost-binaries for Windows (http://sourceforge.net/projects/boost/files/boost-binaries/), you need to rename the folder containing the .lib and .dll files to lib (otherwise the CMake-modules provided by CMake will not be able to find the libraries).</p>
-<p>Subsequently, fire up CMake, point it to a source and build directory and hit Configure. Select your compiler of preference and hit ok. This will start the iterative process of CMake trying to find a third party dependency and you specifiying its location. The first one to provide will be Boost. To allow CMake to find Boost add a BOOST_ROOT variable pointing to for example C:/libs/boost_1_57_0. Then press Configure again and CMake will ask for the next library. These should be pretty straightforward to fill in (e.g. TIFF_LIBRRARY should point to tiff.lib, TIFF_INCLUDE_DIRECTORY to |folder to libtiff|\include. If more steps are unclear, please open a ticket on the Github issue-tracker.</p>
-<p>During configuration you will notice that several parts of ASAP can be built seperately (e.g. the viewer). To build this part, simply check the component and hit Configure again. The 'Package on install'-option will allow you to build a binary setup-package like the one provided on the Github-release page. On Windows this requires NSIS to be installed.</p>
-<p>After all the dependencies are resolved, hit Generate and CMake will create a Visual Studio Solution or makefile file which can be used to compile the source code.</p>
+        <p>Software description</p>
     </div>
 
     </div>
