@@ -44,7 +44,7 @@ ARCHIVES_SAVE_AS = 'archives/index.html'
 INDEX_SAVE_AS = 'highlights/index.html'
 
 # Theme settings
-THEME = "themes/pathology-theme"
+THEME = "themes/radboudumc-theme"
 
 # Plugins
 PLUGIN_PATHS = ["plugins"]

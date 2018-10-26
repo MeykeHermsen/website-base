@@ -67,7 +67,7 @@ The theme requires Nodejs and npm to be built.
 ### Installation
 
 ```
-npm --prefix pathology-theme install
+npm --prefix radboudumc-theme install
 ```
 
 ### Usage
@@ -75,13 +75,13 @@ npm --prefix pathology-theme install
 For testing purposes:
 
 ```
-npm --prefix pathology-theme run deploy-watch
+npm --prefix radboudumc-theme run deploy-watch
 ```
 
 For a new build:
 
 ```
-npm --prefix pathology-theme run deploy
+npm --prefix radboudumc-theme run deploy
 ```
 
 ## Above the fold

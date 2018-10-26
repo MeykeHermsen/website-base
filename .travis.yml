@@ -19,7 +19,7 @@ install:
 cache:
   pip: true
   directories:
-    - pathology-theme/node_modules
+    - radboudumc-theme/node_modules
     #- above-the-fold/node_modules
 
 before_cache:

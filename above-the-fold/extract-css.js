@@ -42,10 +42,10 @@ function startNewJob () {
 
   return penthouse({
     url: current.url,
-    css: '../themes/pathology-theme/static/css/theme.min.css'
+    css: '../themes/radboudumc-theme/static/css/theme.min.css'
   })
   .then(criticalCss => {
-    fs.writeFileSync('../themes/pathology-theme/templates/critical_css/' + current.id + '.css', criticalCss);
+    fs.writeFileSync('../themes/radboudumc-theme/templates/critical_css/' + current.id + '.css', criticalCss);
     return startNewJob()
   })
   .catch(e => {

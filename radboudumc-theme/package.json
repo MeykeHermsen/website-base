@@ -1,5 +1,5 @@
 {
-  "name": "pathology-theme",
+  "name": "radboudumc-theme",
   "version": "1.0.0",
   "description": "Theme for pathology website",
   "main": "index.js",
@@ -7,8 +7,8 @@
     "minify": "node-sass --output-style compressed ./sass/theme.scss ./build/theme.min.css",
     "postcss": "postcss ./build/theme.min.css --no-map --map --use autoprefixer -o ./build/theme.min.css",
     "watch": "node-sass-chokidar ./sass -o ./build --watch --source-map-embed ",
-    "deploy": "npm run minify && npm run postcss && cp -r ./build/. ./../themes/pathology-theme/static/css/",
-    "deploy-watch": "node-sass-chokidar  --watch --source-map-embed ./sass/theme.scss ./../themes/pathology-theme/static/css/theme.min.css"
+    "deploy": "npm run minify && npm run postcss && cp -r ./build/. ./../themes/radboudumc-theme/static/css/",
+    "deploy-watch": "node-sass-chokidar  --watch --source-map-embed ./sass/theme.scss ./../themes/radboudumc-theme/static/css/theme.min.css"
   },
   "author": "Wouter Bulten",
   "license": "Copyright",
