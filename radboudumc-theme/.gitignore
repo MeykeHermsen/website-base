@@ -1,5 +1,0 @@
-# Sass theme
-node_modules
-
-build/*.css
-build/*.map

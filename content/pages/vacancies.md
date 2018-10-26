@@ -1,2 +1,0 @@
-title: Vacancies
-Contact us
